@@ -6,7 +6,7 @@ end
 
 module MicroRails
   class Application < Rails::Application
-    config.active_record.schema_format = :sql
+    config.active_record.schema_format = :ruby
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
     config.assets.enabled = true
