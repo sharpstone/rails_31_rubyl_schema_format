@@ -2,7 +2,12 @@
   "environments": {
     "test": {
       "addons":[
-         "heroku-postgresql"
+        {
+         "plan": "heroku-postgresql",
+         "options": {
+           "version": "11"
+         }
+        }
       ]
     }
   }
